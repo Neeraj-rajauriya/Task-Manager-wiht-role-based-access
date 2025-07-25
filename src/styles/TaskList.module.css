@@ -1,0 +1,71 @@
+/* src/styles/TaskList.module.css */
+.taskListContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.taskListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.taskListHeader h1 {
+  color: #1e293b;
+  font-size: 2rem;
+}
+
+.createButton {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createButton:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.taskGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.loading, .noTasks, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.error {
+  color: #ef4444;
+}
+
+/* Add these to your existing styles */
+.disabledButton {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #cccccc;
+}
+
+.createButton:hover:not(.disabledButton) {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.createButton:active:not(.disabledButton) {
+  transform: translateY(0);
+}

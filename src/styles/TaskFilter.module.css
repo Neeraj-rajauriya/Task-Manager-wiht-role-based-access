@@ -1,0 +1,44 @@
+/* src/styles/TaskFilter.module.css */
+.filterContainer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterGroup label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.filterSelect {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 0.875rem;
+  min-width: 180px;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.clearButton:hover {
+  color: #2563eb;
+}
